@@ -1,8 +1,8 @@
 import { Plus } from "lucide-react";
 import React from "react";
 import { Button } from "./ui/button";
-import { DataTable } from "./DataTable/DataTable";
-import { columns } from "./book table/Columns";
+import { DataTable } from "./dataTable/DataTable";
+import { columns } from "./bookTable/Columns";
 import { useBooks } from "@/hooks/useBooks";
 import { BookFormDialog } from "./BookFormDialog";
 import { Toaster } from "@/components/ui/sonner";
