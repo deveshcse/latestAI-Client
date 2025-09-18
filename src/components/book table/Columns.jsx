@@ -11,7 +11,6 @@ export const columns = [
     cell: (row) => row.getValue("title"),
     enableSorting: false,
     enableHiding: false,
-
   },
   {
     accessorKey: "author",
@@ -19,20 +18,20 @@ export const columns = [
       <DataTableColumnHeader column={column} title="Author" />
     ),
     cell: (row) => row.getValue("author"),
-     enableSorting: false,
+    enableSorting: false,
   },
   {
     accessorKey: "genre",
     header: ({ column }) => (
       <div className="flex items-center gap-2">
         Genre
-        <DataTableFacetedFilter column={column} title="Genre"  enableFilter  />
+        <DataTableFacetedFilter column={column} title="Genre" enableFilter />
       </div>
     ),
     cell: (row) => row.getValue("genre"),
     enableSorting: false,
     filterFn: (row, id, value) => value.includes(row.getValue(id)),
-     enableGlobalFilter: false,
+    enableGlobalFilter: false,
   },
   {
     accessorKey: "publishedYear",
@@ -40,7 +39,7 @@ export const columns = [
       <DataTableColumnHeader column={column} title="Published Year" />
     ),
     cell: (row) => row.getValue("publishedYear"),
-     enableGlobalFilter: false,
+    enableGlobalFilter: false,
   },
   {
     accessorKey: "status",
@@ -53,7 +52,7 @@ export const columns = [
     cell: (row) => row.getValue("status"),
     enableSorting: false,
     filterFn: (row, id, value) => value.includes(row.getValue(id)),
-     enableGlobalFilter: false,
+    enableGlobalFilter: false,
   },
   {
     id: "edit",
