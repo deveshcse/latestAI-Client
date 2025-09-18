@@ -1,7 +1,9 @@
 import axios from "axios";
 
+const baseURL = import.meta.env.VITE_API_BASE_URL
+
 export const apiClient = axios.create({
-  baseURL: "https://crudcrud.com/api/74ee6246a83a4104b3010a6afa731e7a", 
+  baseURL, 
   headers: {
     "Content-Type": "application/json",
   },

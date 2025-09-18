@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Form, FormField, FormItem, FormLabel, FormMessage, FormControl } from "@/components/ui/form"
 import { useCreateBook, useUpdateBook } from "@/hooks/useBooks"
-
+import { toast } from "sonner"
 const schema = z.object({
   title: z.string().min(1, "Title is required"),
   author: z.string().min(1, "Author is required"),
@@ -38,7 +38,9 @@ export function BookForm({ defaultValues, onSuccess }) {
         console.log("Updating book with ID:", defaultValues._id);
         console.log("Updated values:", values);
         // update
-        updateBook.mutate({ id: defaultValues._id, ...values })
+        const response = updateBook.mutate({ id: defaultValues._id, ...values })
+        console.log("Update response:", response);
+        
       } else {
         // create
         createBook.mutate(values)
