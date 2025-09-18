@@ -8,7 +8,7 @@ export function DeleteRow({ row }) {
     <Button
       variant="ghost"
       size="icon"
-      onClick={() => deleteBook.mutate(row.original.id)}
+      onClick={() => deleteBook.mutate(row.original._id)}
       className="text-destructive cursor-pointer hover:text-destructive"
     >
       <Trash />
