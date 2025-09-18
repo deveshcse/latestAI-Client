@@ -1,7 +1,7 @@
 import { EditRow } from "./EditRow";
 import { DeleteRow } from "./DeleteRow";
-import { DataTableColumnHeader } from "../Data Table/DataTableColumnHeader";
-import { DataTableFacetedFilter } from "../Data Table/DataTableFacetedFilter";
+import { DataTableColumnHeader } from "./DataTableColumnHeader";
+import { DataTableFacetedFilter } from "./DataTableFacetedFilter";
 export const columns = [
   {
     accessorKey: "title",

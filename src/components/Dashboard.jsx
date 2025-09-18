@@ -1,7 +1,7 @@
 import { Plus } from "lucide-react";
 import React from "react";
 import { Button } from "./ui/button";
-import { DataTable } from "./Data Table/DataTable";
+import { DataTable } from "./DataTable/DataTable";
 import { columns } from "./book table/Columns";
 
 
