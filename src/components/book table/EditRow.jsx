@@ -7,7 +7,11 @@ export function EditRow({ row }) {
     <BookFormDialog
       defaultValues={row.original}
       trigger={
-        <Button variant="ghost" size="icon">
+        <Button
+          variant="ghost"
+          size="icon"
+          className="text-green-500 cursor-pointer hover:text-green-500"
+        >
           <Edit size={16} />
         </Button>
       }
