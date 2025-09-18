@@ -10,7 +10,6 @@ export const Dashboard = () => {
   const { data, isLoading } = useBooks();
   const books = data?.data ?? [];
 
-
   return (
     <div className="w-full h-screen">
       <div className="w-full h-12 flex items-center justify-between px-4 border-b bg-blue-50 shadow-md">
